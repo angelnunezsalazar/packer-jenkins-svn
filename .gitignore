@@ -1,0 +1,6 @@
+.tmp
+.vagrant
+provisioning/modules-vendor
+output-*
+packer_cache
+
