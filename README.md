@@ -3,28 +3,26 @@ Packer CSD
 
 ## Descripción
 
-Script para generar una máquina virtual VBOX con las herramientas necesarias para el curso Certified Scrum Developer
+Script para generar una máquina Virtual Box con algunas herramientas para un ambiente de IC.
 
 ## Requerimientos
 
 - Ruby 2.+
 
-# Cómo generar la máquina Virtual?
+## Cómo generar la máquina Virtual?
 
-### Paso 1: Instalar herramientas
-
-Packer:
-
-	http://www.packer.io/docs/installation.html
-
-Librarian-puppet:
-
-    $ gem install librarian-puppet
-
-### Paso 2: Descargar módulos externos para el provisionamiento
+### Paso 1: Descargar módulos externos para el provisionamiento
+	$ gem install librarian-puppet
     $ librarian-puppet install --path provisioning/modules-vendor
 
-### Paso 3: Generar la máquina virtual
+### Paso 2: Generar la máquina virtual
+
+Puedes generar la máquina virtual de 2 maneras diferentes: Vagrant o Packer
+
+#### Generar la máquina con vagrant (instalar previamente Vagrant)
+	$ vagrant up
+
+#### Generar la máquina con Packer (instalar previamente Packer)
 	$ gem build ubuntu.json
 
 ## Qué contiene?
