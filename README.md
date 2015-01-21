@@ -27,7 +27,7 @@ Puedes generar la máquina virtual de 2 maneras diferentes: Vagrant o Packer
 
 ## Qué contiene?
 - JDK
-- Jenkins (Puerto 8008)
+- Jenkins (Puerto 8080)
 - Apache
 - Subversion (Puerto 80)
 - RVM, Ruby
